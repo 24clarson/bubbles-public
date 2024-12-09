@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Bubbles</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="main">
+    <div class="banner">
+      <h1>Bubbles</h1>
+    </div>
+    <a id="auth">Load Activities</a>
+
+    <div class="container">
+      <!-- Sidebar Menu -->
+      <aside class="sidebar">
+        <h2>Menu</h2>
+        <label for="year-select">Year:</label>
+        <select id="year-select">
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+        </select>
+  
+        <label for="month-select">Month:</label>
+        <select id="month-select">
+          <option value="0">January</option>
+          <option value="1">February</option>
+          <option value="2">March</option>
+          <option value="3">April</option>
+          <option value="4">May</option>
+          <option value="5">June</option>
+          <option value="6">July</option>
+          <option value="7">August</option>
+          <option value="8">September</option>
+          <option value="9">October</option>
+          <option value="10">November</option>
+          <option value="11">December</option>
+        </select>
+      </aside>
+  
+      <!-- Calendar -->
+      <main class="calendar-container">
+        <h1 id="calendar-title">January 2023</h1>
+        <div class="calendar">
+          <div class="weekdays">
+            <div class="day-name">Sun</div>
+            <div class="day-name">Mon</div>
+            <div class="day-name">Tue</div>
+            <div class="day-name">Wed</div>
+            <div class="day-name">Thu</div>
+            <div class="day-name">Fri</div>
+            <div class="day-name">Sat</div>
+          </div>
+          <div id="calendar-days" class="days"></div>
+        </div>
+        
+      </main>
+    </div>
+  </div>
+
+  <script src="/javascripts/script.js"></script>
+</body>
+
+</html>
