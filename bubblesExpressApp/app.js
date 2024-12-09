@@ -68,7 +68,7 @@ app.post("/fetchAccessToken", async (req, res) => {
 });
 
 async function fetchAccessToken(info) {
-  const clientSecret = '044f7e30b9b1e6c04ed1a4af70f4cc118946d52f';
+  const clientSecret = process.env.secret;
 
   try {
       const response = await fetch('https://www.strava.com/oauth/token', {
