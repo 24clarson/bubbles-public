@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const clientId = '142021';
-const redirectUri = window.location.href;
+const redirectUri = "https://bubbles-vyp2.onrender.com/";
 const authUrl = `https://www.strava.com/oauth/authorize?client_id=${clientId}&response_type=code&redirect_uri=${redirectUri}&scope=activity:read_all,read_all&approval_prompt=auto`;
 
 document.getElementById('auth').href = authUrl;
